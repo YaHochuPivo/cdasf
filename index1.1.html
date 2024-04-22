@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+
+function test() {
+str = ""
+str += "x = " + window.event.x + "\n"
+str += "y = " + window.event.y + "\n"
+10
+str += "Вы нажали клавишу: "
+if (window.event.shiftKey) str += "Shift"
+if (window.event.ctrlKey) str += "Ctrl"
+if (window.event.altKey) str += "Alt"
+alert(str)
+}
+
+
+        alert("Начало работы скрипта");
+        qu = confirm("Закрыть окно?");
+        document.writeln(qu+';');
+        uname = prompt("Введите имя", "Anonymous");
+        document.writeln("Имя " + uname)
+        
+        a = parseInt("2.5")
+        b = parseInt("10 рублей")
+        c = parseInt("рубли 10")
+        d = parseInt("-15.87")
+        document.writeln(a)
+        document.writeln(b)
+        document.writeln(c)
+        document.writeln(d)
+        
+        a = isNaN("2.5")
+        b = isNaN("10 рублей")
+        d = isNaN("-15.87")
+        document.writeln(a)
+        document.writeln(b)
+        document.writeln(d)
+
+        var dec = 255;
+        var hex = dec.toString(16)
+        document.writein(hex);
+
+        function to16(n10) {
+ s = "0123456789abcdef"
+ if (n10 > 255) return null
+ i = n10 % 16
+8
+ j = (n10 - i) / 16
+ rezult = "0x"
+ rezult += s.charAt(j)
+ rezult += s.charAt(i)
+ return rezult
+ }
+ document.writeln(to16(16), " ", to16(100), " ",
+to16(128))
+
+
+function квадратное_уравнение(a,b,c) {
+var корень = new Array()
+var D = b*b - 4*a*c
+if (a == 0) {
+if (!(b==0)) {
+корень[0] = -c/b
+корень[1] = null
+}
+return корень // единственный корень или нет корней
+}
+if (D == 0) { // одинаковые корни
+9
+корень[0] = -b/2/a
+корень[1] = корень[0]
+}
+if (D > 0) { // различные корни
+корень[0] = (-b - Math.sqrt(D)) / 2 / a
+корень[1] = (-b + Math.sqrt(D)) / 2 / a
+}
+return корень
+}
+document.writeln("<p>(",
+квадратное_уравнение(0,2,6), "); (",
+квадратное_уравнение(1,-2,1), ");<br> (")
+document.writeln(квадратное_уравнение(3,4,-2.5),
+"); (", квадратное_уравнение(2,0,5), ");</p>")
+
+function test() {
+str = ""
+str += "x = " + window.event.x + "\n"
+str += "y = " + window.event.y + "\n"
+10
+str += "Вы нажали клавишу: "
+if (window.event.shiftKey) str += "Shift"
+if (window.event.ctrlKey) str += "Ctrl"
+if (window.event.altKey) str += "Alt"
+alert(str)
+}
+</script>
+</head>
+<body>
+<button onclick="test()">Нажмите на
+кнопку</button>
+
+function заменить() {
+    x = window.event.srcElement // ссылка на объект
+    x.innerText = "Программируем!" // замена текста
+    }
+    </script>
+    </head>
+    <body>
+    <button onclick="заменить()">Первая кнопка</button>
+    <button onclick="заменить()">Вторая кнопка</button>
+
+    function ссылка() {
+        res = confirm ("Перейти по ссылке?")
+        if (!res) window.event.returnValue = false
+        11
+        }
+        </script>
+        <a onclick="ссылка()" href="http://www.asu.ru">Сайт
+        АлтГУ</a>
+
+        <div onclick="alert('Щелчок по блоку')">
+            <img src="изображение.jpg" >
+            <button onclick="alert('Щелчок по кнопке')">Нажмите</button>
+
+
+<html>
+<div onclick="alert('Щелчок по блоку')">
+<img src="изображение.jpg" >
+<button onclick="alert('Щелчок по кнопке');
+window.event.cancelBubble=true">Нажмите</button>
+</div>
+</html>
+
+<html>
+<head><title>Страница с изображением</title></head>
+<body>
+<center>
+<img src="изображение.jpg" name="p1"
+width="128" height="128">
+</center>
+<p>
+<form name="f1">
+Имя:
+<input type="text" name="t1" value=""><br/>
+e-mail:
+<input type="text" name="t2"
+value=""><br/><br/>
+<input type="button" name="b1"
+value="Нажмите"
+onClick="alert('Привет!')"><br/><br/>
+<input type="text" name="t3"
+value="Привет">
+<input type="button" value="На английском"
+onClick="document.f1.t3.value='Hello'">
+</form>
+</p>
+<p>
+<a href="http://www.asu.ru">Сайт АлтГУ</a>
+</p>
+</body>
+</html>
+
+    </script>
+</head>
+</html>
